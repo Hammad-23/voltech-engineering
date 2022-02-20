@@ -1,0 +1,50 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+label,
+button {
+  font-family: sans-serif;
+}
+.sale-Imag-Main-Row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.iphone-Image {
+  background-image: url("../asset/images/iphone13.PNG");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.sale-Image-Text-Col {
+  text-align: left;
+  margin-top: 80px;
+}
+.holiday-Text {
+  color: white;
+}
+.up-To-30-Off-Text {
+  color: white;
+  font-weight: 600;
+}
+.shop-Button {
+  height: 32px;
+  width: 28%;
+  cursor: pointer;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  background-color: #751fff;
+  color: white;
+  border-radius: 15px;
+}
+.shop-Button:hover {
+  background-color: black;
+}
