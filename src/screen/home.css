@@ -9,22 +9,37 @@ span,
 label,
 button {
   font-family: sans-serif;
+  cursor: pointer;
+}
+.flex-Col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
+}
+.home-Page-Main-Row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #edecec;
 }
 .sale-Imag-Main-Row {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 .iphone-Image {
   background-image: url("../asset/images/iphone13.PNG");
-  height: 500px;
+  height: 450px;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-}
-.sale-Image-Text-Col {
   text-align: left;
-  margin-top: 80px;
+  background-size: cover;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .holiday-Text {
   color: white;
@@ -47,4 +62,63 @@ button {
 }
 .shop-Button:hover {
   background-color: black;
+}
+.icon-Card-Main-Row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.icon-Card-Main-Col {
+  background-color: white;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.free-Shipping-Icon-Col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  cursor: pointer;
+}
+.text {
+  font-weight: 600;
+  cursor: pointer;
+}
+.card-Main-Col {
+  background-color: white;
+}
+.card-Col {
+  border: solid 1px #edecec;
+}
+.view-All-Button {
+  height: 50px;
+  width: 100%;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  background-color: #751fff;
+  color: white;
+  border-radius: 15px;
+  font-size: 18px;
+  margin-top: 18px;
+}
+@media screen and (max-width: 600px) {
+  .free-Shipping-Icon-Col {
+    margin-bottom: 50px;
+    margin-top: 15px;
+  }
+  .icon-Card-Main-Col {
+    display: block;
+    height: 400px;
+  }
+}
+
+.shop-By-Category-Col {
+  background-color: white;
+  height: 400px;
 }

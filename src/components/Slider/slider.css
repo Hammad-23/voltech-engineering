@@ -1,18 +1,25 @@
-h3,p,button{
-    font-family: sans-serif;
+h3,
+p,
+button {
+  font-family: sans-serif;
 }
-.slider-Button{
-    width: 13%;
-    height: 34px;
-    border-top: none;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    cursor: pointer;
-    background-color: #751fff;
-    border-radius: 15px;
-    color: white;
+.slider-Button {
+  width: 13%;
+  height: 34px;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+  background-color: #751fff;
+  border-radius: 15px;
+  color: white;
 }
-.slider-Button:hover{
-    background-color: black;
+.slider-Button:hover {
+  background-color: black;
+}
+@media screen and (max-width: 600px) {
+  .slider-Button {
+    width: 69%;
+  }
 }

@@ -1,0 +1,55 @@
+span,
+p {
+  font-family: sans-serif;
+  cursor: pointer;
+}
+.boxImg {
+  cursor: pointer;
+}
+.boxImg > img {
+  border-radius: 30px;
+}
+figure {
+  overflow: hidden;
+  margin: 0 10px;
+  border-radius: 15px;
+}
+.boxImg > img {
+  display: block;
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
+.boxImg > .zoomIn > img {
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+.boxImg > .zoomIn:hover img {
+  transform: scale(1.3);
+  transition: all.8s;
+}
+.name-Text {
+  font-size: 16px;
+  cursor: pointer;
+}
+.name-Text:hover {
+  color: blue;
+  transition: all.4s;
+}
+.price-Text:hover {
+  transition: all.4s;
+}
+@media screen and (max-width: 600px) {
+  .name-Text {
+    margin-top: 33px;
+    font-size: 21px;
+  }
+  .card-Imag {
+    border: solid none;
+    height: 200px;
+    width: 100%;
+  }
+  .price-Text {
+    font-size: 21px;
+  }
+}

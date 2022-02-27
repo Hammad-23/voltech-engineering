@@ -8,7 +8,7 @@ import "./slider.css";
 export default function Slider() {
   return (
     <>
-      <Carousel>
+      <Carousel style={{ marginBottom: "15px" }}>
         <Carousel.Item style={{ height: "400px" }}>
           <img
             style={{ height: "500px" }}
