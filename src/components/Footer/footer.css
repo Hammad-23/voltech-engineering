@@ -1,0 +1,31 @@
+.footer-Main-Col {
+  margin-top: 15px;
+}
+.store-Text-Col {
+  text-align: left;
+}
+.footer-Heading-Text {
+  font-weight: 600;
+}
+.footer-Text:hover {
+  color: #751fff;
+  transition: all.8s;
+}
+.footer-Icon-Main-Col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-Icon-Col {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-Icon {
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .store-Text-Col {
+    text-align: center;
+  }
+}

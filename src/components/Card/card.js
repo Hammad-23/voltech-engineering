@@ -5,10 +5,10 @@ import { Container, Row, Col } from "react-bootstrap";
 export default function Card(props) {
   return (
     <>
-      <div className="boxImg">
-        <div className="zoomIn">
+      <div className="card-Image">
+        <div className="zoom-Image">
           <figure>
-            <img className="img-fluid img" src={props.Img} />
+            <img src={props.Img} />
           </figure>
         </div>
       </div>

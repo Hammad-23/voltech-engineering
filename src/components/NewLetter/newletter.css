@@ -1,0 +1,44 @@
+.news-letter-Main-Col {
+    background-color: #751fff;
+  }
+  .new-Letter-Text-Col {
+    color: white;
+  }
+  .sign-Up-To-Text {
+    color: whitesmoke;
+    font-weight: 400;
+  }
+  #email-Input{
+    height: 50px;
+    width: 100%;
+    padding-left: 10px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    background-color: #edecec;
+    color: black;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    cursor: pointer;
+    outline: none;
+  }
+  #email-Input:hover{
+    background-color: white;
+    border: solid 2px black;
+  }
+  #subscribe-Button{
+    height: 50px;
+    width: 100%;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+  }
+  
+  

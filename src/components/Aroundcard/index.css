@@ -1,0 +1,33 @@
+#around-Main-Div {
+  text-align: center;
+}
+.around-Div-Flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+#around-Image {
+  cursor: pointer;
+  height: 100px;
+  width: 100%;
+}
+#around-Card-Text {
+  font-weight: 600;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+#around-Div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #edecec;
+  height: 150px;
+  width: 50%;
+  border-radius: 100px;
+  margin-bottom: 15px;
+}
+#image-Zoom:hover {
+  transform: scale(1.1);
+  transition: all.5s;
+}

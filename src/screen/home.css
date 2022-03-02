@@ -62,6 +62,7 @@ button {
 }
 .shop-Button:hover {
   background-color: black;
+  transition: all.8s;
 }
 .icon-Card-Main-Row {
   display: flex;
@@ -117,8 +118,9 @@ button {
     height: 400px;
   }
 }
-
 .shop-By-Category-Col {
   background-color: white;
-  height: 400px;
+}
+img {
+  cursor: pointer;
 }

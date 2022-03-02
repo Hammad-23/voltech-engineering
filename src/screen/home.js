@@ -11,6 +11,12 @@ import { FiPercent } from "react-icons/fi";
 import { RiBikeLine } from "react-icons/ri";
 import Card from "../components/Card/card";
 import Earpot from "../asset/images/earpots.PNG";
+import AroundCards from "../components/Aroundcard";
+import EarpotTwo from "../asset/images/earpottwo.png";
+import Led from "../asset/images/led.png";
+import Brand from "../asset/images/brand.PNG";
+import NewLetter from "../components/NewLetter/newletter";
+import Footer from "../components/Footer/footer"
 export default function Home() {
   const cardData = [
     {
@@ -20,6 +26,7 @@ export default function Home() {
     },
     {
       Img: Earpot,
+
       Name: "Earpot is the best with in charging pot",
       Price: "1500/",
     },
@@ -50,6 +57,98 @@ export default function Home() {
     },
     {
       Img: Earpot,
+      Name: "Earpot is the best with in charging pot",
+      Price: "1500/",
+    },
+  ];
+  const aroundCardData = [
+    {
+      Image: EarpotTwo,
+      Text: "EarPot",
+    },
+    {
+      Image: Led,
+      Text: "Led T.V",
+    },
+    {
+      Image: EarpotTwo,
+      Text: "EarPot",
+    },
+    {
+      Image: Led,
+      Text: "Led T.V",
+    },
+    {
+      Image: EarpotTwo,
+      Text: "EarPot",
+    },
+    {
+      Image: Led,
+      Text: "Led T.V",
+    },
+    {
+      Image: EarpotTwo,
+      Text: "EarPot",
+    },
+    {
+      Image: Led,
+      Text: "Led T.V",
+    },
+    {
+      Image: EarpotTwo,
+      Text: "EarPot",
+    },
+    {
+      Image: Led,
+      Text: "Led T.V",
+    },
+    {
+      Image: EarpotTwo,
+      Text: "EarPot",
+    },
+    {
+      Image: Led,
+      Text: "Led T.V",
+    },
+  ];
+  const cardDataTwo = [
+    {
+      Img: Led,
+      Name: "Earpot is the best with in charging pot",
+      Price: "1500/",
+    },
+    {
+      Img: Led,
+      Name: "Earpot is the best with in charging pot",
+      Price: "1500/",
+    },
+    {
+      Img: Led,
+      Name: "Earpot is the best with in charging pot",
+      Price: "1500/",
+    },
+    {
+      Img: Led,
+      Name: "Earpot is the best with in charging pot",
+      Price: "1500/",
+    },
+    {
+      Img: Led,
+      Name: "Earpot is the best with in charging pot",
+      Price: "1500/",
+    },
+    {
+      Img: Led,
+      Name: "Earpot is the best with in charging pot",
+      Price: "1500/",
+    },
+    {
+      Img: Led,
+      Name: "Earpot is the best with in charging pot",
+      Price: "1500/",
+    },
+    {
+      Img: Led,
       Name: "Earpot is the best with in charging pot",
       Price: "1500/",
     },
@@ -163,7 +262,7 @@ export default function Home() {
               <h2>Best Sellers</h2>
             </Col>
             <Row className="flex-Col">
-              {cardData.map((item) => {
+              {cardDataTwo.map((item) => {
                 return (
                   <>
                     <Col
@@ -191,7 +290,96 @@ export default function Home() {
             </Col>
           </Col>
         </Row>
+        <Row className="flex-Col">
+          <Col
+            className="shop-By-Category-Col"
+            xs={12}
+            sm={12}
+            md={12}
+            lg={11}
+            xl={11}
+          >
+            <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+              <h3 style={{ marginTop: "25px", marginBottom: "25px" }}>
+                Shop by Category
+              </h3>
+            </Col>
+            <Row className="flex-Col">
+              {aroundCardData.map((item) => {
+                return (
+                  <>
+                    <Col xs={11} sm={11} md={11} lg={3} xl={3}>
+                      <AroundCards Img={item.Image} Text={item.Text} />
+                    </Col>
+                  </>
+                );
+              })}
+            </Row>
+          </Col>
+        </Row>
+        <Row className="flex-Col">
+          <Col className="card-Main-Col" xl={11} lg={11} md={3} sm={4} xs={12}>
+            <Col
+              style={{ marginTop: "15px" }}
+              xs={12}
+              sm={12}
+              md={12}
+              lg={12}
+              xl={12}
+            >
+              <h2>On Sale</h2>
+            </Col>
+            <Row className="flex-Col">
+              {cardData.map((item) => {
+                return (
+                  <>
+                    <Col
+                      className="card-Col"
+                      xs={11}
+                      sm={11}
+                      md={11}
+                      lg={3}
+                      xl={3}
+                    >
+                      <Card
+                        Img={item.Img}
+                        Name={item.Name}
+                        Price={item.Price}
+                      />
+                    </Col>
+                  </>
+                );
+              })}
+            </Row>
+          </Col>
+        </Row>
+        <Row className="flex-Col">
+          <Col
+            className="shop-By-Category-Col"
+            xs={12}
+            sm={12}
+            md={12}
+            lg={11}
+            xl={11}
+          >
+            <Col
+              style={{ marginTop: "15px" }}
+              xs={12}
+              sm={12}
+              md={12}
+              lg={12}
+              xl={12}
+            >
+              <h1>Brands</h1>
+            </Col>
+            <Col className="barnd-Cols" xs={12} sm={12} md={12} lg={12} xl={12}>
+              <img src={Brand} />
+            </Col>
+          </Col>
+        </Row>
+        {/* <NewLetter/> */}
       </Row>
+      <Footer/>
     </>
   );
 }

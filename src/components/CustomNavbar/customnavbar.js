@@ -6,11 +6,13 @@ import { Row, Col } from "react-bootstrap";
 import { GrSearch, GrFavorite } from "react-icons/gr";
 import { FaUserCircle } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
+import Logo from "../../asset/images/logo.jpeg"
 export default function UserNavbar() {
   return (
     <>
       <Row className="main-Row">
         <Col className="heading-Col" xs={12} sm={12} md={4} lx={4} xl={4}>
+          <img className="logo-Image" src={Logo} />
           <h3>Voltech Engineering</h3>
         </Col>
         <Col className="heading-Col" xs={12} sm={12} md={4} lx={4} xl={4}>
