@@ -16,7 +16,7 @@ import EarpotTwo from "../asset/images/earpottwo.png";
 import Led from "../asset/images/led.png";
 import Brand from "../asset/images/brand.PNG";
 import NewLetter from "../components/NewLetter/newletter";
-import Footer from "../components/Footer/footer"
+import Footer from "../components/Footer/footer";
 export default function Home() {
   const cardData = [
     {
@@ -62,22 +62,6 @@ export default function Home() {
     },
   ];
   const aroundCardData = [
-    {
-      Image: EarpotTwo,
-      Text: "EarPot",
-    },
-    {
-      Image: Led,
-      Text: "Led T.V",
-    },
-    {
-      Image: EarpotTwo,
-      Text: "EarPot",
-    },
-    {
-      Image: Led,
-      Text: "Led T.V",
-    },
     {
       Image: EarpotTwo,
       Text: "EarPot",
@@ -379,7 +363,7 @@ export default function Home() {
         </Row>
         {/* <NewLetter/> */}
       </Row>
-      <Footer/>
+      <Footer />
     </>
   );
 }

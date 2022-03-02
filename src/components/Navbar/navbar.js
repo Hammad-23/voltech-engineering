@@ -1,8 +1,10 @@
 import React from "react";
 import { Col, Row, Container, Navbar, NavDropdown, Nav } from "react-bootstrap";
 import "./navbar.css";
+import { useHistory } from "react-router-dom";
 
 export default function Navbars() {
+  let history = useHistory();
   return (
     <>
       <Navbar bg="light" expand="lg">
@@ -15,7 +17,14 @@ export default function Navbars() {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <Nav.Link href="#">Shop all</Nav.Link>
+              <Nav.Link
+                href="#"
+                onClick={() => {
+                  history.push("/shop");
+                }}
+              >
+                Shop all
+              </Nav.Link>
               <Nav.Link href="#">Computer</Nav.Link>
               <Nav.Link href="#">Tablets</Nav.Link>
               <Nav.Link href="#">Drones & Cameras</Nav.Link>

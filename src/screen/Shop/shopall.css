@@ -1,0 +1,43 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+label {
+  font-family: sans-serif;
+}
+.shop-All-Text-Col {
+  font-weight: 600;
+  font-size: 45px;
+}
+.filter-Main-Col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filter-Col {
+  text-align: left;
+}
+.filter-Text {
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+.line-Div {
+  border-bottom: solid 1px lightgray;
+  width: "82%";
+}
+.collection-Text {
+  font-weight: 100;
+  font-size: 20px;
+}
+.side-Bar-Text {
+  font-weight: 100;
+  color: gray;
+}
+.side-Bar-Text:hover {
+  color: gainsboro;
+}
